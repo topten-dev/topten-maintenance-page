@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Topten | </title>
     <link rel="stylesheet" href="/src/style.css" />
@@ -20,7 +20,7 @@
           <button type="button" class="bg-gray-800 text-white rounded px-2 py-1" data-lang="it">Italiano</button>
           <button type="button" class="bg-gray-800 text-white rounded px-2 py-1" data-lang="fr">Français</button>
         </div>
-        <span class="text-bold">LOGO</span>
+        <img id="main-logo" src="/logo_large.png" alt="Logo" class="mx-auto mb-4 max-w-xs" />
         <h1 id="headline" class="text-5xl">We are <b id="almost">Almost</b> there!</h1>
         <p id="subtitle">Stay tuned for something amazing!!!</p>
 
@@ -38,9 +38,5 @@
 
 </div>
     <script type="module" src="/src/main.ts"></script>
-    <script type="module">
-      import { setupLanguageButtons } from './src/translations.ts';
-      setupLanguageButtons();
-    </script>
   </body>
 </html>
