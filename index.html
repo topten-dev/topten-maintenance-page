@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topten | </title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body style="overflow:visible;">
+    <div class="relative h-screen w-full flex items-center justify-center bg-cover bg-center text-center px-5"
+    style="background-image:url(https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500);">
+    <div class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
+
+
+    <div class="z-50 flex flex-col justify-center text-white w-full h-screen">
+        <div class="flex justify-center mb-4 gap-2">
+          <button type="button" class="bg-gray-800 text-white rounded px-2 py-1" data-lang="en">English</button>
+          <button type="button" class="bg-gray-800 text-white rounded px-2 py-1" data-lang="de">Deutsch</button>
+          <button type="button" class="bg-gray-800 text-white rounded px-2 py-1" data-lang="it">Italiano</button>
+          <button type="button" class="bg-gray-800 text-white rounded px-2 py-1" data-lang="fr">Français</button>
+        </div>
+        <span class="text-bold">LOGO</span>
+        <h1 id="headline" class="text-5xl">We are <b id="almost">Almost</b> there!</h1>
+        <p id="subtitle">Stay tuned for something amazing!!!</p>
+
+        <div class="sm:mt-10">
+            <form class="w-full max-w-xl mx-auto">
+                <div class="flex items-center border-b border-indigo-500 py-2">
+                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="username@email.ext" aria-label="Full name">
+                    <button id="subscribe-btn" class="flex-shrink-0 bg-indigo-500 hover:bg-teal-700 border-indigo-500 hover:border-indigo-700 text-sm border-4 text-white py-1 px-2 rounded" type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      import { setupLanguageButtons } from './src/translations.ts';
+      setupLanguageButtons();
+    </script>
+  </body>
+</html>
