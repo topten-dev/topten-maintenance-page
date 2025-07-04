@@ -25,6 +25,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Set BASE_PATH for custom domain
+        run: |
+          if [ -f CNAME ]; then
+            echo "BASE_PATH=/" >> $GITHUB_ENV
+          else
+            echo "BASE_PATH=/topten-maintenance-page/" >> $GITHUB_ENV
+          fi
+
       - name: Build
         run: npm run build
 
