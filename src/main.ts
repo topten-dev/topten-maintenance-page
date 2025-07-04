@@ -4,12 +4,13 @@ import { setupLanguageButtons } from './translations';
 setupLanguageButtons();
 
 export function getLogoSrcForHost(host: string): string {
+  const base = import.meta.env.BASE_URL || '/';
   if (host.endsWith('topten.ch')) {
-    return '/topten_ch_logo.svg';
+    return base + 'topten_ch_logo.svg';
   } else if (host.endsWith('topten.eu')) {
-    return '/logo_large.png';
+    return base + 'logo_large.png';
   } else {
-    return '/logo_large.png'; // default
+    return base + 'logo_large.png'; // default
   }
 }
 
