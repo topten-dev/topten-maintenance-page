@@ -2,27 +2,27 @@
 
 export const translations: Record<string, Record<string, string>> = {
   en: {
-    headline: 'We are <b>Almost</b> there!',
+    headline: 'We’ll Be Back Soon!',
     almost: 'Almost',
-    subtitle: 'Stay tuned for something amazing!!!',
+    subtitle: 'Our site is currently undergoing scheduled maintenance. We appreciate your patience and invite you to subscribe for updates.',
     subscribe: 'Subscribe',
   },
   de: {
-    headline: 'Wir sind <b>fast</b> da!',
+    headline: 'Wir sind bald zurück!',
     almost: 'fast',
-    subtitle: 'Bleiben Sie dran für etwas Großartiges!',
+    subtitle: 'Unsere Website wird derzeit gewartet. Wir danken für Ihre Geduld und laden Sie ein, unseren Newsletter zu abonnieren.',
     subscribe: 'Abonnieren',
   },
   it: {
-    headline: 'Siamo <b>quasi</b> pronti!',
+    headline: 'Torneremo presto!',
     almost: 'quasi',
-    subtitle: 'Resta sintonizzato per qualcosa di straordinario!',
+    subtitle: 'Il nostro sito è attualmente in manutenzione. Grazie per la pazienza! Iscriviti per ricevere aggiornamenti.',
     subscribe: 'Iscriviti',
   },
   fr: {
-    headline: 'Nous y sommes <b>presque</b> !',
+    headline: 'Nous serons bientôt de retour !',
     almost: 'presque',
-    subtitle: 'Restez à l’écoute pour quelque chose d’incroyable !',
+    subtitle: 'Notre site est actuellement en maintenance. Merci de votre patience, abonnez-vous pour recevoir des mises à jour.',
     subscribe: 'S’abonner',
   }
 };
