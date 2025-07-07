@@ -1,6 +1,7 @@
 name = "topten-maintenance-page"
 compatibility_date = "2025-07-07"
 
-[site]
-bucket = "./dist"
-entry-point = "workers-site"
+[assets]
+directory = "./dist/"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"
